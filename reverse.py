@@ -1,0 +1,9 @@
+#WAP to print the reverse of number e.g. 1234=4321
+num=int(input("Enter the number: "))
+rev= 0
+digit=0
+while num>=1:
+    digit=num%10
+    rev=rev*10+digit
+    num//=10
+print("Reverse= ",rev)
