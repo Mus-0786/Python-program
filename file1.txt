@@ -1,0 +1,19 @@
+#file handling
+#file is used to store the data
+#open(): file name,access mode:used to open the file
+#w represent over the write
+#a is used append mode
+#close() is used to explicitly close the file 
+'''
+var=open("file_name.txt","w")
+if var:
+    print("File Created successfully")
+var.close()
+'''
+'''
+#we can close the file automatically using with
+with open("file1.txt","w") as file:
+    file.write("file 1 is exist")
+with open("file1.txt","r") as var:
+    reading=var.read()
+print(reading
